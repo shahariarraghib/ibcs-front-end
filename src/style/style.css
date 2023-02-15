@@ -1,0 +1,60 @@
+.inputStyle,
+.selectStyle,
+option,
+.inputStylebutton {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.inputStylebutton[type="submit"] {
+  background: #ec5990;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 10px;
+}
+
+.inputStylebutton[type="submit"]:hover {
+  background: #bf1650;
+}
+
+.inputStylebutton[type="button"]:active,
+.inputStylebutton[type="submit"]:active {
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid transparent;
+  opacity: 0.8;
+}
+
+.inputStyle:disabled,
+option {
+  opacity: 0.4;
+}
+
+.inputStylebutton[type="button"]:hover {
+  transition: 0.3s all;
+}
+
+p {
+  color: #bf1650;
+  display: flex;
+  justify-content: left;
+}
+
+p::before {
+  display: inline;
+  content: "⚠ ";
+  display: flex;
+  justify-content: left;
+  margin-right: 10px;
+}
